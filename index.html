@@ -376,7 +376,7 @@ body {
    Phones — tighter spacing so the whole card fits on one screen
    ========================================================== */
 @media (max-width: 430px) {
-  .card { padding: 20px 18px 16px; }
+  .card { padding: 20px 30px 16px; }
   .hero { margin-bottom: 14px; padding-top: 0; }
   .logo { max-width: 250px; }
   .tagline { font-size: 17px; margin-top: 0; }
@@ -396,6 +396,10 @@ body {
   .hours h2 { font-size: 16px; margin-bottom: 6px; }
   .hours li { padding: 8px 0; }
   .footer { padding-top: 0; }
+}
+/* Narrower card on desktop so the buttons are not stretched wide */
+@media (min-width: 431px) {
+  .card { max-width: 380px; }
 }
 </style>
 </head>
@@ -534,8 +538,8 @@ window.GYM_CONFIG = {
   // ---- Working hours ----
   // Add, remove, or edit rows freely — the page renders this list automatically.
   hours: [
-    { group: "Women", time: "8:00 AM – 3:00 PM" },
-    { group: "Men", time: "3:00 PM – 7:30 AM" },
+    { group: "Women", time: "8:00 AM – 3:30 PM" },
+    { group: "Men", time: "4:00 PM – 7:30 AM" },
   ],
 
   // ---- Share button ----
